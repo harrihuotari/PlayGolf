@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">PlayGolf</string>
+
+    /!-- Player's first name -->
+    <string name="first_name">First Name</string>
+
+    <!-- Player's last name   -->
+    <string name="last_name">Last Name</string>
+
+    <!-- Header for new golf round   -->
+    <string name="start_new_golf_round">Start new golf round</string>
+
+    <!-- Button to start new golf round   -->
+    <string name="start_golf_button">Go to scoring</string>
+
+    <!-- Button to select to update into the database -->
+    <string name="database_update">Database update</string>
+
+    <!-- Text to par  -->
+    <string name="par_text">Par</string>
+
+    <!-- Text to Putts  -->
+    <string name="putts_text">Putts</string>
+
+    <!-- Text to Fairway  -->
+    <string name="fairway_text">Fairway</string>
+
+    <!-- Text to Green hit  -->
+    <string name="green_hit_text">Green hit</string>
+
+    <!-- Text to Store all  -->
+    <string name="store_all_text">Store all</string>
+
+    <!-- Text to Score -->
+    <string name="score_text">Score</string>
+
+    <!-- Text to Hole -->
+    <string name="hole_text">Hole</string>
+
+    <!-- Hint for the name of the course -->
+    <string name="course_name">Enter course name</string>
+
+    <!-- Hint for the name of the course -->
+    <string name="tee_time_hint">Tee time</string>
+
+    <!-- Hint for the name of the course -->
+    <string name="enter_date_hint">Date format dd-MM-YYYY</string>
+
+    <!-- Hint for the tee time of playing -->
+    <string name="exact_hcp_hint">Exact HCP</string>
+
+    <!-- Hint for describing golf round -->
+    <string name="event_description">Additional info (optional)</string>
+    <string name="hcp">HCP</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="holeListItems_text">Hole Par HCP Score</string>
+    <string name="store">Store</string>
+
+</resources>

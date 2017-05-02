@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/single_hole_container"
+    android:padding="16dp">
+
+    <!-- Top row, Hole x -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/hole_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textSize="12pt"/>
+        <TextView
+            android:id="@+id/hole_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:textSize="12pt"/>
+    </LinearLayout>
+
+    <!-- The main block in the middle, two or three vertical items for each vertical row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <!--  Score row -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="@string/score_text" />
+
+            <!-- Fetch earlier inserted score -->
+            <TextView
+                android:id="@+id/hole_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt" />
+
+         </LinearLayout>
+
+        <!-- Par row -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="@string/par_text" />
+
+            <!-- Fetch par of the hole -->
+            <TextView
+                android:id="@+id/hole_par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+        <!-- Get input for number of putts -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="@string/putts_text" />
+
+            <Button
+                android:id="@+id/nr_of_putts"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"/>
+
+            <!-- Get putts -->
+            <Button
+                android:id="@+id/minus_putt_button"
+                android:layout_width="44dp"
+                android:layout_marginLeft="56dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/plus_putt_button"
+                android:layout_width="44dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="+"/>
+
+        </LinearLayout>
+
+        <!-- Get input for fairway hit or not -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="36sp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:id="@+id/fairway_text_id"
+                android:text="@string/fairway_text" />
+
+            <!-- Radio buttons for fairway hit -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/fw_group"
+                android:checkedButton="@+id/fw_hit_no">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/yes"
+                    android:id="@+id/fw_hit_yes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:id="@+id/fw_hit_no"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <!-- End of fairway hit or not -->
+
+        <!-- Green hit row -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="@string/green_hit_text" />
+
+            <!-- Radio buttons for green hit -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/gh_group"
+                android:checkedButton="@+id/green_hit_no">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:layout_marginRight="60dp"
+                    android:id="@+id/green_hit_yes"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"
+                    android:id="@+id/green_hit_no"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- End of the main block -->
+
+
+    <!-- The button to accept editing and to exit -->
+    <Button
+        android:id="@+id/store_button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginLeft="120dp"
+        android:text="@string/store"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+

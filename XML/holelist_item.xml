@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/hole_list_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+        <TextView
+            android:id="@+id/hole_nr_view"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            tools:text=" "/>
+
+        <TextView
+            android:id="@+id/hole_par_view"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text=" "/>
+
+        <TextView
+            android:id="@+id/hole_hcp_view"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text=" "/>
+
+        <Button
+            android:id="@+id/hole_score"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:labelFor="@+id/score_edit_label"
+            android:layout_width="32dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            tools:text=" "/>
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="32dp"
+            android:layout_marginLeft="26dp"
+            android:layout_height="36dp"
+            android:textSize="16sp"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="32dp"
+            android:layout_marginLeft="26dp"
+            android:layout_height="36dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="+"/>
+
+        <ImageButton
+            android:id="@+id/array_image"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/arrow2"/>
+
+</LinearLayout>
